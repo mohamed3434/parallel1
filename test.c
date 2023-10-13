@@ -1,20 +1,16 @@
 #include <stdio.h>
 #include <string.h>
 
-// Maximum number of users
 #define MAX_USERS 10
 
-// User structure
 struct User {
     char username[50];
     char password[50];
 };
 
-// User database
 struct User users[MAX_USERS];
 int userCount = 0;
 
-// Function to register a new user
 void registerUser() {
     if (userCount < MAX_USERS) {
         printf("Enter a username: ");
@@ -28,7 +24,6 @@ void registerUser() {
     }
 }
 
-// Function to login a user
 void loginUser() {
     char username[50];
     char password[50];
